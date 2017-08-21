@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bruno Bernabo - Turma 8B - AV 2TRI</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        html {
+            background-color: #4d4d4d;
+        }
+
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            color: #4d4d4d;
+            background-color: #f1f1f1;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        .botao {
+            color: #f1f1f1;
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: #8f3faf;
+            font-size: .9em;
+            border-radius: 3px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #4d4d4d;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: #f1f1f1;
+            font-weight: 700;
+            font-size: 28px;
+            font-family: Pacifico, serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav ul li {
+            text-align: center;
+            width: 100%;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 0;
+            width: 100%;
+            text-decoration: none;
+            color: #f1f1f1;
+        }
+
+        nav {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            flex-direction: row;
+            width: 70%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4d4d4d;
+            color: #f1f1f1;
+        }
+
+        #reserve {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #reserve {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #reserve h2,
+        #reserve p {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Viaje com Brunão</a>
+        <ul>
+            <li><a href="imagens.html">VIAGENS</a></li>
+            <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+            <li><a href="faleconosco.html">FALE CONOSCO</a></li>
+        </ul>
+    </nav>
+
+    <section id="reserve">
+        <h2>Reserve a sua viajem</h2>
+        <form id="formulario" method="post" action="mailto:brunobernabo2003@gmail.com">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+            <input type="tel" name="celular" placeholder="Celular" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="rg" placeholder="RG" required>
+            <input type="number" name="cpf" placeholder="CPF" required>
+            <input type="number" name="cartao" placeholder="Numero do Cartão" required>
+            <input type="date" name="vencimento" placeholder="Data de Vencimento" required>
+            <input type="number" name="codigoseguranca" placeholder="Codigo de Segurança" required>
+            <select>
+                <option value="tokyo">Tokyo</option>
+                <option value="buenosaires">Buenos Aires</option>
+                <option value="chicago">Chicago</option>
+                <option value="london">Londres</option>
+                <option value="roma">Roma</option>
+                <option value="paris">Paris</option>
+            </select>
+            <button type="submit">Reservar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Brunão.</p>
+    </footer>
+
+</body>
+
+</html>
